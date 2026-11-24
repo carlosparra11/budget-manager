@@ -1,0 +1,19 @@
+[project]
+name = "budget-manager"
+version = "1.0.0"
+description = "Interactive Personal Budget Manager - Release 1"
+requires-python = ">=3.10"
+
+[project.scripts]
+budget = "budget_manager.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
