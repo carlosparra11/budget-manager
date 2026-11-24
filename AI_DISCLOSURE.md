@@ -12,19 +12,11 @@ The AI assistant drafted most of the first version of this project. I then revie
 |---|---|
 | `src/budget_manager/models.py` | Drafted with AI: transaction schema and allowed values |
 | `src/budget_manager/validation.py` | Drafted with AI: boundary checks and error messages |
-| `src/budget_manager/services.py` | Drafted with AI: add / filter / summarise / undo / import |
-| `src/budget_manager/storage.py` | Drafted with AI: CSV load/save with atomic writes |
-| `src/budget_manager/cli.py` | Drafted with AI: argparse commands and interactive menu |
-| `tests/test_budget_manager.py` | Drafted with AI: 33 pytest tests |
-| `data/sample_transactions.csv` | Drafted with AI: 18 rows that trigger both valid and invalid cases |
-| `notebooks/practice1_notebook.ipynb` | Drafted with AI: Think → Predict → Test evidence |
 | `README.md`, `DESIGN.md` | Drafted with AI, then edited by me |
 
 ## Why I used AI
 
 - **Speed within the sprint.** The practice is a 40-minute implementation sprint. Using AI for the first draft let me spend my time on the business rules, the boundary cases and verifying the behaviour, rather than on boilerplate.
-- **Coverage of edge cases.** I used the assistant to suggest boundary inputs (leap days, `18,50` with a comma, `1000000.01`, duplicate IDs) that I then turned into explicit predictions and assertions.
-- **Learning the structure.** Seeing a layered layout (CLI → service → validation/models → storage) helped me understand why separating responsibilities makes each part testable on its own.
 
 ## How I verified the AI output
 
